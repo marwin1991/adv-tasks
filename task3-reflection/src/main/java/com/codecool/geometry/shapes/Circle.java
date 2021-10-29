@@ -2,6 +2,8 @@ package com.codecool.geometry.shapes;
 
 public class Circle extends Shape {
 
+    int someField;
+
     private final double radius;
 
     public Circle(double radius) {

@@ -8,6 +8,8 @@ import com.codecool.geometry.utilities.FormulaProvider;
  */
 public abstract class Shape {
 
+    public String name;
+
     private final String perimeterFormula;
     private final String areaFormula;
 
