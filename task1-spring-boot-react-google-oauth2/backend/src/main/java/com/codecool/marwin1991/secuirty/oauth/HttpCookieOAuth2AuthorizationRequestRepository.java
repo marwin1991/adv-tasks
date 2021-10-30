@@ -1,4 +1,4 @@
-package com.codecool.marwin1991.secuirty;
+package com.codecool.marwin1991.secuirty.oauth;
 
 import com.codecool.marwin1991.util.CookieUtils;
 import org.springframework.security.oauth2.client.web.AuthorizationRequestRepository;
