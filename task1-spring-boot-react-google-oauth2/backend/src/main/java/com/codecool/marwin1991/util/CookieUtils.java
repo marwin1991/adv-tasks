@@ -1,5 +1,7 @@
 package com.codecool.marwin1991.util;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 import org.springframework.util.SerializationUtils;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
