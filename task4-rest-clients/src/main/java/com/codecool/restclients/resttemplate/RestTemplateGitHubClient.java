@@ -22,6 +22,7 @@ class RestTemplateGitHubClient implements GitHubClient {
 
     @Override
     public GitHubUserInfoDTO getInfo(String nick){
+        log.info("RestTemplate test");
         String url = BASE_URL + "users/" + nick;
 
         GitHubUserInfoDTO response = restTemplate.getForObject(url, GitHubUserInfoDTO.class);
