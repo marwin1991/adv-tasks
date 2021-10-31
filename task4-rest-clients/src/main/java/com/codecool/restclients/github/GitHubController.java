@@ -24,4 +24,10 @@ public class GitHubController {
         return client.getInfo(nick);
     }
 
+    @GetMapping("/repo/{name}")
+    public void createRepo(@PathVariable String name){
+        log.info("Passed repo name: " + name);
+        client.createRepo(name);
+    }
+
 }

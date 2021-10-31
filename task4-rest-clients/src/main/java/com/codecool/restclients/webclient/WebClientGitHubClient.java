@@ -5,6 +5,7 @@ import com.codecool.restclients.github.GitHubClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Profile("webClient")
@@ -26,5 +27,10 @@ public class WebClientGitHubClient implements GitHubClient {
                 .block();
 
         return response;
+    }
+
+    @Override
+    public void createRepo(String name) {
+        throw new RuntimeException("Not implemented yet");
     }
 }

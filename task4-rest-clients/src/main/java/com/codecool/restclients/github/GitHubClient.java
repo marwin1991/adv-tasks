@@ -6,4 +6,6 @@ public interface GitHubClient {
 
     GitHubUserInfoDTO getInfo(String nick);
 
+    void createRepo(String name);
+
 }

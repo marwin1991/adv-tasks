@@ -25,4 +25,9 @@ class OpenFeignGitHubClient implements GitHubClient {
         return client.get(nick);
     }
 
+    @Override
+    public void createRepo(String name) {
+        throw new RuntimeException("Not implemented yet");
+    }
+
 }
